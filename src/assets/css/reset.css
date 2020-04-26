@@ -1,0 +1,122 @@
+/*
+* reset.css 重置浏览器默认样式（全局）
+* 注意：reset.css 不要轻易修改。
+*/
+
+body,
+div,
+span,
+header,
+footer,
+nav,
+section,
+aside,
+article,
+ul,
+dl,
+dt,
+dd,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+i,
+b,
+textarea,
+button,
+input,
+select {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+input:read-only {
+    background-color: #fff;
+}
+
+input,
+button,
+select,
+textarea {
+    outline: none;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clear {
+    zoom: 1;
+}
+
+.margin {
+    margin: 0 auto;
+}
+
+.t-left {
+    text-align: left;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+input[type="text"]:focus {
+    outline: 0;
+}
+
+.clearfix:after {
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+    content: "";
+}
+
+.clearfix {
+    zoom: 1;
+}

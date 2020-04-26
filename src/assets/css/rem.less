@@ -1,0 +1,32 @@
+//750设计稿rem计算比例值
+@font-size-base: 75;
+
+@baseFontSize: 75; //基于视觉稿横屏尺寸/100得出的基准font-size
+
+.px2rem(@name, @px) {
+	@{name}: @px / @baseFontSize * 1rem;
+}
+
+//flex 内容占比
+.flex(@px) {
+	flex: @px;
+	-ms-flex: @px;
+	-webkit-flex: @px;
+	-webkit-box-flex: @px;
+}
+
+//flex 盒子
+.flexbox {
+	display: -webkit-box;
+	/* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+	display: -moz-box;
+	/* Firefox 17- */
+	display: -webkit-flex;
+	/* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+	display: -moz-flex;
+	/* Firefox 18+ */
+	display: -ms-flexbox;
+	/* IE 10 */
+	display: flex;
+	/* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+}

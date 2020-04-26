@@ -1,0 +1,17 @@
+/*
+* common.css 项目全局公用css
+* 注意：common.css 是根据项目情况来定，不同项目common.css可以不一样
+*/
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    background: #fff;
+    margin: 0 auto;
+    border: none;
+    color: #666;
+    font-family: "Helvetica", "Microsoft Yahei";
+    -webkit-overflow-scrolling: touch;
+}
