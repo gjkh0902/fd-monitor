@@ -2,7 +2,6 @@
     "name": "mk-fd-monitor",
     "version": "0.0.1",
     "private": true,
-    "description": "",
     "scripts": {
         "serve": "vue-cli-service serve --mode local",
         "build:dev": "vue-cli-service build --mode development",
@@ -50,10 +49,10 @@
         "iOS >= 8",
         "Android >= 4.0"
     ],
-    "frame": "vue-cli3 h5",
+    "description": "vue-cli3 h5",
     "author": "",
     "repository": {
         "type": "git",
-        "url": "https://github.com/xielovedu/testcli.git"
+        "url": "https://github.com/xielovedu/mk-fd-monitor.git"
     }
 }
