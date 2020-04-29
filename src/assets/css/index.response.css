@@ -1,0 +1,570 @@
+.page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    width: 100vw;
+    height: 226.27vw;
+}
+
+.mod1 {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 17.07vw;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 0.53vw;
+    margin-left: 0.8vw;
+    height: 2.27vw;
+}
+
+.outer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 10.67vw;
+    height: 2.27vw;
+}
+
+.shebeiliuliang {
+    margin-top: -0.67vw;
+    margin-right: 0.53vw;
+    width: 2.13vw;
+    height: 1.33vw;
+}
+
+.sketch {
+    opacity: 1;
+    margin-right: 0.93vw;
+    max-width: 9.33vw;
+    height: 2.27vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 2.27vw;
+    white-space: nowrap;
+    color: #030303;
+    font-family: SFProText-Regular;
+    font-size: 1.6vw;
+    font-weight: 400;
+}
+
+.zuanshi {
+    margin-top: -0.53vw;
+    width: 2vw;
+    height: 1.47vw;
+}
+
+.text {
+    opacity: 1;
+    margin-right: 11.73vw;
+    max-width: 16vw;
+    height: 2.27vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 2.27vw;
+    white-space: pre;
+    color: #030303;
+    font-family: SFProText-Semibold;
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 2.27vw;
+}
+
+.pic {
+    margin-top: -0.53vw;
+    margin-right: 0.67vw;
+    width: 0.93vw;
+    height: 1.47vw;
+}
+
+.percent {
+    opacity: 1;
+    margin-right: 0.4vw;
+    max-width: 7.33vw;
+    height: 2.27vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 2.27vw;
+    white-space: nowrap;
+    color: #030303;
+    font-family: SFProText-Regular;
+    font-size: 1.6vw;
+    font-weight: 400;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -0.53vw;
+    margin-right: 0.13vw;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.4);
+    width: 3.2vw;
+    height: 1.47vw;
+}
+
+.colorDiv {
+    border-radius: 0;
+    background-color: #000000;
+    width: 2.67vw;
+    height: 0.93vw;
+}
+
+.dot {
+    margin-top: -0.67vw;
+    width: 0.27vw;
+    height: 0.53vw;
+}
+
+.block_2 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    align-self: center;
+    flex-direction: row;
+    margin-top: 5.2vw;
+    width: 91.2vw;
+    height: 6.4vw;
+}
+
+.fenxiang {
+    margin-right: 5.47vw;
+    width: 2vw;
+    height: 3.47vw;
+}
+
+.guanbi {
+    margin-right: 25.87vw;
+    width: 2.93vw;
+    height: 2.93vw;
+}
+
+.activityList {
+    opacity: 1;
+    margin-right: 29.73vw;
+    max-width: 46.27vw;
+    height: 6.4vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 6.4vw;
+    white-space: nowrap;
+    color: #4a4a4a;
+    font-size: 4.53vw;
+    font-weight: 500;
+}
+
+.largeIcon {
+    width: 7.07vw;
+    height: 1.73vw;
+}
+
+.mod2 {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 4vw;
+    border-radius: 1.07vw;
+    background-color: #ffffff;
+    width: 92vw;
+    height: 94.13vw;
+}
+
+.group {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-direction: row;
+    background-size: contain;
+    background-image: url(../images/img_29666_1_0.png);
+    width: 92vw;
+    height: 51.47vw;
+}
+
+.tagWrap {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 44vw;
+    margin-left: 75.47vw;
+    border-radius: 0.53vw;
+    background-color: #ff4f4d;
+    padding-right: 1.6vw;
+    padding-left: 1.6vw;
+    height: 4.8vw;
+}
+
+.tag {
+    opacity: 1;
+    line-height: 3.73vw;
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 2.67vw;
+    font-weight: 500;
+}
+
+.title {
+    position: relative;
+    opacity: 1;
+    margin-top: 2.67vw;
+    margin-left: 4vw;
+    max-width: 86.4vw;
+    height: 6vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 6vw;
+    white-space: nowrap;
+    color: #333333;
+    font-size: 4.27vw;
+    font-weight: 500;
+}
+
+.info {
+    position: relative;
+    opacity: 1;
+    margin-top: 0.53vw;
+    margin-left: 4vw;
+    max-width: 86.4vw;
+    height: 4.4vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 4.4vw;
+    white-space: nowrap;
+    color: #9b9b9b;
+    font-size: 3.2vw;
+    font-weight: 400;
+}
+
+.infoWrap {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 3.2vw;
+    margin-left: 4.27vw;
+    height: 4vw;
+}
+
+.picture {
+    margin-right: 1.6vw;
+    width: 1.07vw;
+    height: 1.07vw;
+}
+
+.info_2 {
+    opacity: 1;
+    line-height: 4vw;
+    white-space: nowrap;
+    color: #4a4a4a;
+    font-size: 2.93vw;
+    font-weight: 400;
+}
+
+.block_3 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1.6vw;
+    margin-left: 4.27vw;
+    height: 4vw;
+}
+
+.pic_2 {
+    margin-right: 1.6vw;
+    width: 1.07vw;
+    height: 1.07vw;
+}
+
+.desc {
+    opacity: 1;
+    line-height: 4vw;
+    white-space: nowrap;
+    color: #4a4a4a;
+    font-size: 2.93vw;
+    font-weight: 400;
+}
+
+.color {
+    position: relative;
+    align-self: center;
+    margin-top: 3.2vw;
+    background-color: #e9e9e9;
+    width: 84vw;
+    height: 0.13vw;
+}
+
+.group_2 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    align-self: center;
+    flex-direction: row;
+    margin-top: 4vw;
+    width: 83.07vw;
+    height: 4.93vw;
+}
+
+.container_2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 32.4vw;
+    height: 4.4vw;
+}
+
+.chuangjian {
+    margin-right: 1.33vw;
+    width: 3.2vw;
+    height: 3.2vw;
+}
+
+.info_3 {
+    opacity: 1;
+    line-height: 4.4vw;
+    white-space: nowrap;
+    color: #4a4a4a;
+    font-size: 3.2vw;
+    font-weight: 400;
+}
+
+.enterActivity {
+    opacity: 1;
+    margin-right: 2.4vw;
+    max-width: 14.67vw;
+    height: 4.93vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 4.93vw;
+    white-space: nowrap;
+    color: #fd5e02;
+    font-size: 3.47vw;
+    font-weight: 500;
+}
+
+.right {
+    width: 1.2vw;
+    height: 2vw;
+}
+
+.mod3 {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 4vw;
+    border-radius: 1.07vw;
+    background-color: #ffffff;
+    width: 92vw;
+    height: 94.13vw;
+}
+
+.bannerWrap {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    border-top-left-radius: 1.07vw;
+    border-top-right-radius: 1.07vw;
+    background-color: #4172f3;
+    width: 92vw;
+    height: 51.47vw;
+    overflow: hidden;
+}
+
+.banner {
+    position: relative;
+    width: 92vw;
+    height: 40.8vw;
+}
+
+.color_2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 1.07vw;
+    border-top-right-radius: 1.07vw;
+    background-color: #4172f3;
+    width: 92vw;
+    height: 9.2vw;
+    overflow: hidden;
+}
+
+.title_2 {
+    position: relative;
+    opacity: 1;
+    margin-top: 2.67vw;
+    margin-left: 4vw;
+    max-width: 86.4vw;
+    height: 6vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 6vw;
+    white-space: nowrap;
+    color: #333333;
+    font-size: 4.27vw;
+    font-weight: 500;
+}
+
+.info_4 {
+    position: relative;
+    opacity: 1;
+    margin-top: 0.53vw;
+    margin-left: 4vw;
+    max-width: 86.4vw;
+    height: 4.4vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 4.4vw;
+    white-space: nowrap;
+    color: #9b9b9b;
+    font-size: 3.2vw;
+    font-weight: 400;
+}
+
+.infoWrap_2 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 3.2vw;
+    margin-left: 4.27vw;
+    height: 4vw;
+}
+
+.picture_2 {
+    margin-right: 1.6vw;
+    width: 1.07vw;
+    height: 1.07vw;
+}
+
+.info_5 {
+    opacity: 1;
+    line-height: 4vw;
+    white-space: nowrap;
+    color: #4a4a4a;
+    font-size: 2.93vw;
+    font-weight: 400;
+}
+
+.group_3 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1.6vw;
+    margin-left: 4.27vw;
+    height: 4vw;
+}
+
+.pic_3 {
+    margin-right: 1.6vw;
+    width: 1.07vw;
+    height: 1.07vw;
+}
+
+.desc_2 {
+    opacity: 1;
+    line-height: 4vw;
+    white-space: nowrap;
+    color: #4a4a4a;
+    font-size: 2.93vw;
+    font-weight: 400;
+}
+
+.colorDiv_2 {
+    position: relative;
+    align-self: center;
+    margin-top: 3.2vw;
+    background-color: #e9e9e9;
+    width: 84vw;
+    height: 0.13vw;
+}
+
+.container_3 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    align-self: center;
+    flex-direction: row;
+    margin-top: 4vw;
+    width: 83.07vw;
+    height: 4.93vw;
+}
+
+.outer_2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 32.4vw;
+    height: 4.4vw;
+}
+
+.chuangjian_2 {
+    margin-right: 1.33vw;
+    width: 3.2vw;
+    height: 3.2vw;
+}
+
+.info_6 {
+    opacity: 1;
+    line-height: 4.4vw;
+    white-space: nowrap;
+    color: #4a4a4a;
+    font-size: 3.2vw;
+    font-weight: 400;
+}
+
+.enterActivity_2 {
+    opacity: 1;
+    margin-right: 2.4vw;
+    max-width: 14.67vw;
+    height: 4.93vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 4.93vw;
+    white-space: nowrap;
+    color: #fd5e02;
+    font-size: 3.47vw;
+    font-weight: 500;
+}
+
+.right_2 {
+    width: 1.2vw;
+    height: 2vw;
+}
+
+.ft {
+    position: relative;
+    opacity: 1;
+    margin-top: 4vw;
+    max-width: 67.47vw;
+    height: 4.93vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 4.93vw;
+    white-space: pre;
+    color: #cbcbcb;
+    font-size: 3.47vw;
+    font-weight: 400;
+}
