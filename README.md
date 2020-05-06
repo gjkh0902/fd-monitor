@@ -137,6 +137,3 @@ new MonitorJS().monitorPerformance({
 2） vue项目，需要在new Vue之前初始化监控工具，避免监控有漏；
 
 ***
-### 9、版本变更说明
-
-
