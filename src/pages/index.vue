@@ -93,6 +93,7 @@ export default {
 	methods: {
 		test() {
 			alert(1)
+			//this.$router.push('/404')
 		}
 	},
 	created() {

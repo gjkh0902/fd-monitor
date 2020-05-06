@@ -21,6 +21,7 @@ class JSError extends BaseMonitor {
                 this.line = line
                 this.col = col || (window.event && window.event.errorCharacter) || null
                 this.errorObj = error
+                console.log('url', this.url)
                 this.recordError()
             } catch (error) {
                 console.log('js错误异常', error)

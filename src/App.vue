@@ -12,6 +12,8 @@ export default {
 </script>
 
 <style>
+@import './assets/css/reset.css';
+@import './assets/css/common.css';
 @import './assets/css/index.response.css';
 #app {
 	font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -19,6 +21,5 @@ export default {
 	-moz-osx-font-smoothing: grayscale;
 	text-align: center;
 	color: #2c3e50;
-	margin-top: 60px;
 }
 </style>

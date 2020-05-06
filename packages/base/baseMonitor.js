@@ -28,6 +28,7 @@ class BaseMonitor {
      * 记录错误信息
      */
     recordError() {
+        console.log('url', this.url)
         this.handleRecordError()
 
         //延迟记录日志
