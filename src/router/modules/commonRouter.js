@@ -11,6 +11,9 @@ const Index = r => require.ensure([], () => r(require('@/pages/index.vue')), 'In
 //Mod30981
 const Mod30981 = r => require.ensure([], () => r(require('@/pages/mod30981/index.vue')), 'Mod30981')
 
+//Mod30999
+const Mod30999 = r => require.ensure([], () => r(require('@/pages/mod30999/index.vue')), 'Mod30999')
+
 //404错误页面
 const Error404 = r => require.ensure([], () => r(require('@/components/404.vue')), 'Error404')
 
@@ -30,6 +33,14 @@ export default [
         component: Mod30981,
         meta: {
             title: 'mod30981'
+        }
+    },
+    {
+        path: '/mod30999',
+        name: 'mod30999',
+        component: Mod30999,
+        meta: {
+            title: 'mod30999'
         }
     },
     {

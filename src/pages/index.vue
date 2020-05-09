@@ -80,6 +80,7 @@
 		</div>
 	</div>
 </template>
+<style src="../assets/css/index.response.css" scoped />
 <script>
 /*eslint-disable */
 import Tests from '../service/testModule'

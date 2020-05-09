@@ -14,7 +14,6 @@ export default {
 <style>
 @import './assets/css/reset.css';
 @import './assets/css/common.css';
-@import './assets/css/index.response.css';
 #app {
 	font-family: 'Avenir', Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
