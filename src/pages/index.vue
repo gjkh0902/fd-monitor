@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="page">
 		<div class="mod1">
 			<div class="container">
 				<div class="outer">
@@ -80,7 +80,6 @@
 		</div>
 	</div>
 </template>
-<style src="../assets/css/index.response.css" scoped />
 <script>
 /*eslint-disable */
 import Tests from '../service/testModule'
@@ -115,6 +114,7 @@ export default {
 	}
 }
 </script>
+<style src="../assets/css/index.response.css" scoped />
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
 .hello {

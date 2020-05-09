@@ -181,7 +181,7 @@
     position: relative;
     align-items: flex-start;
     flex-direction: column;
-    margin-top: 4vw;
+    margin: 4vw auto;
     border-radius: 1.07vw;
     background-color: #ffffff;
     width: 92vw;
