@@ -8,9 +8,6 @@ Vue.use(Router)
 //路由入口
 const Index = r => require.ensure([], () => r(require('@/pages/index.vue')), 'Index')
 
-//Mod30981
-const Mod30981 = r => require.ensure([], () => r(require('@/pages/mod30981/index.vue')), 'Mod30981')
-
 //Mod30999
 const Mod30999 = r => require.ensure([], () => r(require('@/pages/mod30999/index.vue')), 'Mod30999')
 
@@ -25,14 +22,6 @@ export default [
         component: Index,
         meta: {
             title: 'hello'
-        }
-    },
-    {
-        path: '/mod30981',
-        name: 'mod30981',
-        component: Mod30981,
-        meta: {
-            title: 'mod30981'
         }
     },
     {
