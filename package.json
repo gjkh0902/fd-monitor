@@ -12,6 +12,9 @@
         "dll": "webpack -p --progress --config ./webpack.dll.conf.js",
         "lib": "vue-cli-service build --target lib --name index --dest lib packages/index.js --mode lib"
     },
+    "files": [
+        "lib"
+    ],
     "dependencies": {
         "axios": "^0.18.0",
         "core-js": "^2.6.5",
