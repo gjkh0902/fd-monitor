@@ -8,10 +8,10 @@ import HttpRequest from '../api/httpRequest'
 
 const TEST = {
     testGet: function(params) {
-        return HttpRequest("get", "/tms/test", params)
+        return HttpRequest('get', '/api/test', params)
     },
     testPost: function(params) {
-        return HttpRequest("POST", "/tms/useraccount/save", params)
+        return HttpRequest('POST', '/tms/useraccount/save', params)
     }
 }
 export default TEST

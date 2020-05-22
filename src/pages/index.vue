@@ -97,7 +97,7 @@ export default {
 		}
 	},
 	created() {
-		let params = { a: 1 }
+		let params = {}
 		Tests.testGet(params)
 			.then(res => {
 				console.log(res)
@@ -106,11 +106,8 @@ export default {
 			.catch(error => {
 				//console.log(error);
 			})
-		//console.log(uuu)
-		new MonitorJS().monitorPerformance({
-			pageId: '1', //页面唯一标示
-			url: process.env.VUE_APP_APIURL //信息采集上报地址
-		})
+
+		console.log(uuu)
 	}
 }
 </script>
