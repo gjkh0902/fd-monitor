@@ -70,6 +70,7 @@ new MonitorJS().init({
     vueError: true, //配置是否需要记录vue错误信息
     vue: Vue, //如需监控vue错误信息，则需要传入vue
     extendsInfo: {
+        systemId: 1, //系统ID
         //自定义扩展信息，一般用于数据持久化区分
         domain: '官网', //自定义信息（名称可自定义）
         module: '领取体验课', //自定义信息（名称可自定义）
