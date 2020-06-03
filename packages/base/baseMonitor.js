@@ -34,7 +34,7 @@ class BaseMonitor {
         //延迟记录日志
         setTimeout(() => {
             TaskQueue.fire()
-        }, 100)
+        }, 1000)
     }
 
     /**
@@ -68,25 +68,30 @@ class BaseMonitor {
      * @param {*} extendsInfo
      */
     handleErrorInfo() {
-        let txt = '错误类别: ' + this.category + '\r\n'
-        txt += '日志信息: ' + this.msg + '\r\n'
-        txt += 'url: ' + this.url + '\r\n'
+        let txt = {}
+        txt.msg = this.msg //日志信息
+        txt.url = this.url //url
+
+        //清除stack
+        if (this.errorObj && this.errorObj.stack) delete this.errorObj.stack
+
+        //errorObj
+        if (this.errorObj && !utils.objectIsNull(this.errorObj)) {
+            txt.errorObj = JSON.stringify(this.errorObj)
+        }
+
         switch (this.category) {
             case ErrorCategoryEnum.JS_ERROR:
-                txt += '错误行号: ' + this.line + '\r\n'
-                txt += '错误列号: ' + this.col + '\r\n'
-                if (this.errorObj && this.errorObj.stack) {
-                    txt += '错误栈: ' + this.errorObj.stack + '\r\n'
-                }
+                txt.line = this.line
+                txt.col = this.col
                 break
             default:
-                if (this.errorObj) txt += '其他错误: ' + JSON.stringify(this.errorObj) + '\r\n'
                 break
         }
         let deviceInfo = this.getDeviceInfo()
-        txt += '设备信息: ' + deviceInfo //设备信息
         let extendsInfo = this.getExtendsInfo()
-        let recordInfo = extendsInfo
+        let recordInfo = {}
+        recordInfo.extendsInfo = JSON.stringify(extendsInfo) //扩展信息
         recordInfo.category = this.category //错误分类
         recordInfo.logType = this.level //错误级别
         recordInfo.logInfo = txt //错误信息

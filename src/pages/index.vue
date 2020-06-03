@@ -107,6 +107,16 @@ export default {
 				//console.log(error);
 			})
 
+		// let testobj = { a: 1, b: 3 }
+		// Tests.testPost(testobj)
+		// 	.then(res => {
+		// 		console.log(res)
+		// 		//throw new Error('promise error 22222222222') //promise_error
+		// 	})
+		// 	.catch(error => {
+		// 		//console.log(error);
+		// 	})
+
 		console.log(uuu)
 	}
 }

@@ -20,10 +20,10 @@ class VueError extends BaseMonitor {
             try {
                 let metaData = {
                     name: error.name, //异常名称
-                    message: error.message, //异常信息
+                    //message: error.message, //异常信息
                     stack: error.stack, //异常堆栈信息
-                    vueInfo: error.info, //vue info
-                    resourceUrl: error.script // 异常脚本url
+                    vueInfo: error.info || '', //vue info
+                    resourceUrl: error.script || '' // 异常脚本url
                 }
 
                 //解析resourceUrl，line，col
@@ -43,10 +43,11 @@ class VueError extends BaseMonitor {
 
                 if (Object.prototype.toString.call(vm) === '[object Object]') {
                     metaData.componentName = vm._isVue ? vm.$options.name || vm.$options._componentTag : vm.name
-                    metaData.propsData = vm.$options.propsData
+                    metaData.propsData = vm.$options.propsData || ''
                 }
                 this.level = ErrorLevelEnum.WARN
-                this.msg = JSON.stringify(metaData)
+                this.errorObj = metaData
+                this.msg = error.message
                 this.category = ErrorCategoryEnum.VUE_ERROR
                 this.recordError()
             } catch (error) {

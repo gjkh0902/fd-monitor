@@ -62,7 +62,7 @@ import { MonitorJS } from '~/index' //--本地引入方式调试
 
 // //MonitorJS -异常监控初始化代码
 new MonitorJS().init({
-    url: process.env.VUE_APP_APIURL, //错误上报地址
+    url: process.env.VUE_APP_APIURL + '/addError', //错误上报地址
     jsError: true, //配置是否需要监控js错误 （默认true）
     promiseError: true, //配置是否需要监控promise错误 （默认true）
     resourceError: true, //配置是否需要监控资源错误 （默认true）
@@ -76,9 +76,9 @@ new MonitorJS().init({
         module: '领取体验课', //自定义信息（名称可自定义）
         getDynamic: () => {
             //获取动态传参
-            return {
-                filterOne: getDynamicParams()
-            }
+            // return {
+            //     filterOne: getDynamicParams()
+            // }
         }
     }
 })

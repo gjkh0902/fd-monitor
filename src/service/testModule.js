@@ -11,7 +11,7 @@ const TEST = {
         return HttpRequest('get', '/api/test', params)
     },
     testPost: function(params) {
-        return HttpRequest('POST', '/tms/useraccount/save', params)
+        return HttpRequest('post', '/addError', params)
     }
 }
 export default TEST
