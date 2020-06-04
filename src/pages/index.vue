@@ -53,6 +53,7 @@
 		<div class="mod3">
 			<div class="bannerWrap">
 				<img class="banner" src="../assets/images/img_29666_0_10.png" />
+				<!-- <img class="banner" src="{src1}" /> -->
 				<div class="color_2" />
 			</div>
 			<span class="title_2" :lines="undefined">KK全民挑战：第七届老师校园青歌赛</span>
@@ -88,6 +89,7 @@ export default {
 	data() {
 		return {
 			constants: {}
+			//src1: ''
 		}
 	},
 	methods: {
@@ -116,8 +118,10 @@ export default {
 		// 	.catch(error => {
 		// 		//console.log(error);
 		// 	})
+		//console.tError('123123')
+		//console.log(uuu) //vue error
 
-		console.log(uuu)
+		//this.src1 = 'https://www.baidu.com/a.png' //resource error
 	}
 }
 </script>

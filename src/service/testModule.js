@@ -8,7 +8,7 @@ import HttpRequest from '../api/httpRequest'
 
 const TEST = {
     testGet: function(params) {
-        return HttpRequest('get', '/api/test', params)
+        return HttpRequest('get', '/listError', params)
     },
     testPost: function(params) {
         return HttpRequest('post', '/addError', params)

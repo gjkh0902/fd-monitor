@@ -28,7 +28,6 @@ class BaseMonitor {
      * 记录错误信息
      */
     recordError() {
-        console.log('url', this.url)
         this.handleRecordError()
 
         //延迟记录日志
@@ -45,7 +44,6 @@ class BaseMonitor {
             if (!this.msg) {
                 return
             }
-            console.log(this.url, this.reportUrl)
 
             //过滤掉错误上报地址
             if (this.reportUrl && this.url && this.url.toLowerCase().indexOf(this.reportUrl.toLowerCase()) >= 0) {
@@ -71,6 +69,9 @@ class BaseMonitor {
         let txt = {}
         txt.msg = this.msg //日志信息
         txt.url = this.url //url
+
+        //msg信息过长时，截取前100
+        if (txt.msg && txt.msg.length >= 100) txt.msg = txt.msg.substr(0, 100)
 
         //清除stack
         if (this.errorObj && this.errorObj.stack) delete this.errorObj.stack
