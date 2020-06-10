@@ -119,7 +119,7 @@ export default {
 		// 		//console.log(error);
 		// 	})
 		//console.tError('123123')
-		//console.log(uuu) //vue error
+		console.log(uuu) //vue error
 
 		//this.src1 = 'https://www.baidu.com/a.png' //resource error
 	}
