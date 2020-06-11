@@ -58,10 +58,11 @@ Vue.prototype.$Indicator = Indicator
 // }
 
 import { MonitorJS } from '~/index' //--本地引入方式调试
-//import { MonitorJS } from '&/index.umd.min.js' //--本地引入方式调试
+//import { MonitorJS } from '&/index.umd.min.js' //--本地包引入方式调试
 
 // //MonitorJS -异常监控初始化代码
 new MonitorJS().init({
+    systemId: 1, //系统唯一识别ID
     url: process.env.VUE_APP_APIURL + '/addError', //错误上报地址
     jsError: true, //配置是否需要监控js错误 （默认true）
     promiseError: true, //配置是否需要监控promise错误 （默认true）
@@ -70,7 +71,6 @@ new MonitorJS().init({
     vueError: true, //配置是否需要记录vue错误信息
     vue: Vue, //如需监控vue错误信息，则需要传入vue
     extendsInfo: {
-        systemId: 1, //系统ID
         //自定义扩展信息，一般用于数据持久化区分
         domain: '官网', //自定义信息（名称可自定义）
         module: '领取体验课', //自定义信息（名称可自定义）

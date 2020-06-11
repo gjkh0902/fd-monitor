@@ -41,10 +41,10 @@ export default {
 	},
 	methods: {},
 	created() {
-		console.log(uuu)
+		//性能监控
 		new MonitorJS().monitorPerformance({
 			pageId: '1', //页面唯一标示
-			url: process.env.VUE_APP_APIURL //信息采集上报地址
+			url: process.env.VUE_APP_APIURL + '/addPages' //信息采集上报地址
 		})
 	}
 }

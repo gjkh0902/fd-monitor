@@ -26,8 +26,9 @@ class MonitorJS {
         this.consoleError = options.consoleError || this.consoleError
         this.vueError = options.vueError || this.vueError
         let reportUrl = options.url //上报错误地址
+        let systemId = options.systemId || 0 //系统识别ID
         let extendsInfo = options.extendsInfo || {} //扩展信息（一般用于系统个性化分析）
-        let param = { reportUrl, extendsInfo }
+        let param = { systemId, reportUrl, extendsInfo }
 
         if (this.jsError) {
             new JsError(param).handleError()

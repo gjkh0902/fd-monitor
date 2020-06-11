@@ -22,6 +22,7 @@ class BaseMonitor {
 
         this.reportUrl = params.reportUrl //上报错误地址
         this.extendsInfo = params.extendsInfo //扩展信息
+        this.systemId = params.systemId //系统识别ID
     }
 
     /**
@@ -93,6 +94,7 @@ class BaseMonitor {
         let deviceInfo = this.getDeviceInfo()
         let extendsInfo = this.getExtendsInfo()
         let recordInfo = {}
+        recordInfo.systemId = this.systemId //系统识别ID
         recordInfo.extendsInfo = JSON.stringify(extendsInfo) //扩展信息
         recordInfo.category = this.category //错误分类
         recordInfo.logType = this.level //错误级别
