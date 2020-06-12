@@ -73,7 +73,7 @@ class BaseMonitor {
 
         //msg/url信息过长时，截取前100
         if (txt.msg && txt.msg.length >= 100) txt.msg = txt.msg.substr(0, 100)
-        if (txt.url && txt.url.length >= 100) txt.url = txt.url.substr(0, 100)
+        if (txt.url && txt.url.length >= 100) txt.url = txt.url.substr(0, 200)
 
         //清除stack
         if (this.errorObj && this.errorObj.stack) delete this.errorObj.stack
