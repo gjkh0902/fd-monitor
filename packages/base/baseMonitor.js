@@ -82,6 +82,7 @@ class BaseMonitor {
         if (this.errorObj && !utils.objectIsNull(this.errorObj)) {
             txt.errorObj = JSON.stringify(this.errorObj)
         }
+        //txt.errorObj = this.errorObj
 
         switch (this.category) {
             case ErrorCategoryEnum.JS_ERROR:
