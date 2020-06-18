@@ -57,12 +57,12 @@ Vue.prototype.$Indicator = Indicator
 //     })
 // }
 
-import { MonitorJS } from '~/index' //--本地引入方式调试
+import { MonitorJS } from 'fd-monitor' //--本地引入方式调试
 //import { MonitorJS } from '&/index.umd.min.js' //--本地包引入方式调试
 
 // //MonitorJS -异常监控初始化代码
 new MonitorJS().init({
-    systemId: 1, //系统唯一识别ID
+    systemId: 'BACC4A39EB104B8395F34*****', //系统唯一识别ID
     url: process.env.VUE_APP_APIURL + '/addError', //错误上报地址
     jsError: true, //配置是否需要监控js错误 （默认true）
     promiseError: true, //配置是否需要监控promise错误 （默认true）
